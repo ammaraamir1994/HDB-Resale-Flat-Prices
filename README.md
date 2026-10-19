@@ -135,23 +135,3 @@ Please refer to [SPEC.md](SPEC.md) (or [PIPELINE.md](PIPELINE.md)) for the detai
 2. **Multi-Epoch Schema Drift Strategy** (Handling 2012, 2015, and 2017+ format shifts via `VARIANT` and defensive typing).
 3. **Idempotency Guarantees** across memory, local filesystem, cloud storage, and Snowflake.
 4. **Snowflake DDL & SQL Implementation** (Storage Integration, Snowpipe auto-ingest, and Conformed Silver Merges).
-
----
-
-## Submitting to GitHub
-
-To link and push this codebase to your candidate GitHub repository:
-
-```bash
-# 1. Initialize git (if not already done)
-git init
-git add .
-git commit -m "feat: complete HDB resale ingestion pipeline with resilient pagination, atomic parquet, and snowflake strategy"
-
-# 2. Add your GitHub remote repository
-git remote add origin https://github.com/<your-username>/hdb-resale-ingestion-pipeline.git
-
-# 3. Rename branch to main and push
-git branch -M main
-git push -u origin main
-```
